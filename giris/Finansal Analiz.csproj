@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAE99643-5F7A-450C-93B4-F074DCDA2BB9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>giris</RootNamespace>
+    <AssemblyName>giris</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_paneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_paneli.Designer.cs">
+      <DependentUpon>admin_paneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="animasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="animasyon.Designer.cs">
+      <DependentUpon>animasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A_Gelir_İzleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_Gelir_İzleme.Designer.cs">
+      <DependentUpon>A_Gelir_İzleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A_Gider_İzleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_Gider_İzleme.Designer.cs">
+      <DependentUpon>A_Gider_İzleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A_Güncel_Kur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_Güncel_Kur.Designer.cs">
+      <DependentUpon>A_Güncel_Kur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilgi_Güncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilgi_Güncelle.Designer.cs">
+      <DependentUpon>Bilgi_Güncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gelir_İzleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gelir_İzleme.Designer.cs">
+      <DependentUpon>Gelir_İzleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gelir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gelir.Designer.cs">
+      <DependentUpon>Gelir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gider.Designer.cs">
+      <DependentUpon>Gider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gider_İzleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gider_İzleme.Designer.cs">
+      <DependentUpon>Gider_İzleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gösterge_Paneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gösterge_Paneli.Designer.cs">
+      <DependentUpon>Gösterge_Paneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Güncelle_Sil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Güncelle_Sil.Designer.cs">
+      <DependentUpon>Güncelle_Sil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Güncel_Kur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Güncel_Kur.Designer.cs">
+      <DependentUpon>Güncel_Kur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karşılaştırma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karşılaştırma.Designer.cs">
+      <DependentUpon>Karşılaştırma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Çalışan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Çalışan.Designer.cs">
+      <DependentUpon>Çalışan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin_paneli.resx">
+      <DependentUpon>admin_paneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="animasyon.resx">
+      <DependentUpon>animasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_Gelir_İzleme.resx">
+      <DependentUpon>A_Gelir_İzleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_Gider_İzleme.resx">
+      <DependentUpon>A_Gider_İzleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_Güncel_Kur.resx">
+      <DependentUpon>A_Güncel_Kur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilgi_Güncelle.resx">
+      <DependentUpon>Bilgi_Güncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gelir_İzleme.resx">
+      <DependentUpon>Gelir_İzleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gelir.resx">
+      <DependentUpon>Gelir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gider.resx">
+      <DependentUpon>Gider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gider_İzleme.resx">
+      <DependentUpon>Gider_İzleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gösterge_Paneli.resx">
+      <DependentUpon>Gösterge_Paneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Güncelle_Sil.resx">
+      <DependentUpon>Güncelle_Sil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Güncel_Kur.resx">
+      <DependentUpon>Güncel_Kur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karşılaştırma.resx">
+      <DependentUpon>Karşılaştırma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Çalışan.resx">
+      <DependentUpon>Çalışan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="A.Designer.Gelir_İzleme" />
+    <None Include="A.Gelir_İzleme">
+      <SubType>Form</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_eye-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e6sukjjvdctl3c3f02o610jt6c.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
